@@ -14,6 +14,8 @@ public final class Spacer: UIView {
         case fixed(constant: CGFloat)
     }
 
+    // MARK: - Lifecycle
+
     public convenience init(minimum: CGFloat = .zero) {
         self.init(strategy: .flexible(minimum: minimum))
     }
