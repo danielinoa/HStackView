@@ -37,10 +37,10 @@ public final class HStackView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
 
-    /// The view that influences the height of this view.
-    /// It is anchored to the top and bottom edges, such that it pushes this container vertically as it grows,
-    /// without being streched (as long as it has an assigned or intrinsic height).
-    /// - note: The specified must be in this view's hierarchy.
+    /// This function takes a view that is anchored to the top and bottom edges to influence the height of this
+    /// container view, such that it pushes this container vertically as it grows (as long as it has an assigned or
+    /// intrinsic height).
+    /// - note: The specified view must be in this view's hierarchy.
     @discardableResult
     public func anchorVerticalEdges(to view: UIView, top: CGFloat = .zero, bottom: CGFloat = .zero) -> Self {
         view.translatesAutoresizingMaskIntoConstraints = false
