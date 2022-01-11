@@ -4,7 +4,7 @@
 
 import UIKit
 
-/// A spacer that that is either fixed or expanded along the main axis of its containing stack layout.
+/// A spacer that is either fixed or expanded along the main axis of its containing view.
 public final class Spacer: UIView {
 
     let strategy: Strategy
